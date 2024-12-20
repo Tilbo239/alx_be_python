@@ -13,8 +13,8 @@ match priority:
         reminde = f"'{task}' is a {priority} priority task"
     case "low":
         reminde = f"'{task}'  is a {priority} priority task."
-if priority in priorites and is_time_bound == "yes":
+if priority in priorites and time_bound == "yes":
     print(f"Reminder : {reminde} that require immediate attention today!")
 
-if priority in priorites and is_time_bound == "no":
+if priority in priorites and time_bound == "no":
     print(f"Reminder : {reminde} Consider completing it when you have free time.")
