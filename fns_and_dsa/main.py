@@ -1,7 +1,7 @@
 # from arithmetic_operations import perform_operation
 # from shopping_list_manager import display_menu, add_item, remove_item, view_list, shopping_list
-from explore_datetime import display_current_datetime, calculate_future_date
-
+# from explore_datetime import display_current_datetime, calculate_future_date
+from temp_conversion_tool import convert_to_celsius, convert_to_fahrenheit
 
 def main():
     # print("Arithmetic Operations")
@@ -30,7 +30,25 @@ def main():
     #         print("Invalid choice. Please  try again.")
 
     # display_current_datetime()
-    calculate_future_date()
+    # calculate_future_date()
+
+    print("Choose an option:")
+    print("1. Convert Fahrenheit to Celsius")
+    print("2. Convert Celsius to Fahrenheit")
+
+    choice = input("Enter your choice (1 or 2): ").strip()
+
+    if choice == '1':
+        temp = float(input("Enter the temperature in Fahrenheit: "))
+        result = convert_to_celsius(temp)
+        print(f"{temp}°C is equivalent to {result:.3f}°F")
+    elif choice == '2':
+        temp = float(input("Enter the temperature in Celsius: "))
+        result = convert_to_fahrenheit(temp)
+        print(f"{temp}°C is equivalent to {result:.2f}°F.")
+    else:
+        print("Invalid choice. Please enter 1 or 2.")
+
 
 
 if __name__ == "__main__":
