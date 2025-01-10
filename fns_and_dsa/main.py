@@ -32,20 +32,20 @@ def main():
     # display_current_datetime()
     # calculate_future_date()
 
-    print("Choose an option:")
-    print("1. Convert Fahrenheit to Celsius")
-    print("2. Convert Celsius to Fahrenheit")
+    
 
-    choice = input("Enter your choice (1 or 2): ").strip()
+    temp = input("Enter the temperature to convert: ").strip()
 
-    if choice == '1':
-        temp = float(input("Enter the temperature in Fahrenheit: "))
+    choice = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower().strip()
+
+    if choice == 'c':
+        
         result = convert_to_celsius(temp)
-        print(f"{temp}°C is equivalent to {result:.3f}°F")
-    elif choice == '2':
+        print(f"{temp}° is equivalent to {result}°F")
+    elif choice == 'f':
         temp = float(input("Enter the temperature in Celsius: "))
         result = convert_to_fahrenheit(temp)
-        print(f"{temp}°C is equivalent to {result:.2f}°F.")
+        print(f"{temp}°C is equivalent to {result}°F.")
     else:
         print("Invalid choice. Please enter 1 or 2.")
 
