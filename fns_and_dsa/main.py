@@ -34,16 +34,15 @@ def main():
 
     
 
-    temp = input("Enter the temperature to convert: ").strip()
+    temp = input("Enter the temperature to convert:").strip()
 
-    choice = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower().upper()
+    choice = input("Is this temperature in Celsius or Fahrenheit? (C/F):").lower().upper()
 
     if choice == 'F':
         
         result = convert_to_celsius(temp)
         print(f"{temp}°F is equivalent to {result}°C")
     elif choice == 'C':
-        temp = float(input("Enter the temperature in Celsius: "))
         result = convert_to_fahrenheit(temp)
         print(f"{temp}°C is equivalent to {result}°F.")
     else:
