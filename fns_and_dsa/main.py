@@ -34,9 +34,9 @@ def main():
 
     
 
-    temperature = float(input("Enter the temperature to convert:").strip())
+    temperature = float(input("Enter the temperature to convert: ").strip())
 
-    unit = input("Is this temperature in Celsius or Fahrenheit? (C/F):").lower().upper()
+    unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower().upper()
 
     if unit == 'F':
         
