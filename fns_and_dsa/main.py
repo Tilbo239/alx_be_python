@@ -1,5 +1,5 @@
 # from arithmetic_operations import perform_operation
-from shopping_list_manager import display_menu, add_item, remove_item, view_list
+from shopping_list_manager import display_menu, add_item, remove_item, view_list, shopping_list
 
 
 def main():
@@ -11,7 +11,7 @@ def main():
     # result = perform_operation(num1, num2, operation)
     # print(f"Result: {result}")
     
-    shopping_list = []
+    
     while True:
         display_menu()
         choice = input("Enter  your choice: ")
