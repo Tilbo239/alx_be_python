@@ -1,5 +1,6 @@
 # from arithmetic_operations import perform_operation
-from shopping_list_manager import display_menu, add_item, remove_item, view_list, shopping_list
+# from shopping_list_manager import display_menu, add_item, remove_item, view_list, shopping_list
+from explore_datetime import display_current_datetime, calculate_future_date
 
 
 def main():
@@ -12,21 +13,24 @@ def main():
     # print(f"Result: {result}")
     
     
-    while True:
-        display_menu()
-        choice = input("Enter  your choice: ")
+    # while True:
+    #     display_menu()
+    #     choice = input("Enter  your choice: ")
 
-        if choice == '1':
-            add_item(shopping_list)
-        elif choice == '2':
-            remove_item(shopping_list)
-        elif choice == '3':
-            view_list(shopping_list)
-        elif choice == '4':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please  try again.")
+    #     if choice == '1':
+    #         add_item(shopping_list)
+    #     elif choice == '2':
+    #         remove_item(shopping_list)
+    #     elif choice == '3':
+    #         view_list(shopping_list)
+    #     elif choice == '4':
+    #         print("Goodbye!")
+    #         break
+    #     else:
+    #         print("Invalid choice. Please  try again.")
+
+    # display_current_datetime()
+    calculate_future_date()
 
 
 if __name__ == "__main__":
